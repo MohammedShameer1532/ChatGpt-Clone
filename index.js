@@ -21,7 +21,7 @@ const app = express();
 
 app.use(bodypParser.json());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://chat-gpt-frontend.netlify.app/",
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
